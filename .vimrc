@@ -55,7 +55,16 @@ set smarttab                "智能制表符
 set smartindent             "智能缩进
 set autoindent              "自动缩进
 
-"键位映射相关设置
+"YouCompleteMe相关设置
+let g:ycm_global_ycm_extra_conf='~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
+let g:ycm_error_symbol = '>>'
+let g:ycm_warning_symbol = '>*'
+nnoremap <leader>gl :YcmCompleter GoToDeclaration<CR>
+nnoremap <leader>gf :YcmCompleter GoToDefinition<CR>
+nnoremap <leader>gg :YcmCompleter GoToDefinitionElseDeclaration<CR>
+nmap <F4> :YcmDiags<CR>
+
+"nerdtree相关设置
 "开关文件浏览器
 map <D-1> :NERDTreeToggle <CR>
 "在文件浏览器中定位当前文件

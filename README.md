@@ -34,7 +34,7 @@
 
 ```
 $ cd ~/.vim/bundle/YouCompleteMe
-$ ./install --clang-completer
+$ ./install.sh --clang-completer
 ```
 
 ### Vundle命令：
