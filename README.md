@@ -34,8 +34,29 @@
 
 ```
 $ cd ~/.vim/bundle/YouCompleteMe
-$ ./install.sh --clang-completer
+$ ./install.py --clang-completer
 ```
+
+如果提示
+
+```
+Some folders in /Users/wangpeng/.vim/bundle/YouCompleteMe/third_party/ycmd/third_party are empty; you probably forgot to run:
+	git submodule update --init --recursive
+```
+
+那就
+
+```
+$ git submodule update --init --recursive
+```
+
+然后再执行一遍
+
+```
+./install.py --clang-completer
+```
+
+打开`vim`，如果没有提示`YouCompleteMe`未加载，就说明安装成功了
 
 ### Vundle命令：
 ```
