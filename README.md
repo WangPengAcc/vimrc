@@ -43,6 +43,14 @@ alias vim='/usr/local/Cellar/vim/7.4.1468/bin/vim'
 
 终端输入`$ source ~/.vimrc`使文件生效
 
+### 使用Vundle下载安装插件：
+
+打开`vim`默认模式下输入以下命令：
+
+```
+:PluginInstall!
+```
+
 ### 编译安装YouCompleteMe：
 
 使用`Vundle`安装完`YouCompleteMe`后并不能生效，需要编译安装，`YouCompleteMe`默认支持`c family`语言，对`Python`支持也不错
