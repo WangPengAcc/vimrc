@@ -3,7 +3,14 @@
 * ruby：Mac自带
 * brew：需要检查一下
 * Python：Mac自带
-* Xcode：因为它带clang编译器
+* Xcode：因为它带`clang`编译器
+* vim7.4：Mac自带的是7.3，使用`brew`升级（其实是安装一个新的，老的还在），然后在`~/.bash_profile`添加以下内容：
+
+```
+# vim
+alias vi=vim
+alias vim='/usr/local/Cellar/vim/7.4.1468/bin/vim'
+```
 
 ### 安装中文帮助文档：
 
