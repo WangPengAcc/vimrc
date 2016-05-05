@@ -1,5 +1,6 @@
 ### 准备：
 
+* git：不解释
 * ruby：Mac自带
 * brew：需要检查一下
 * Python：Mac自带
