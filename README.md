@@ -81,6 +81,31 @@ $ git submodule update --init --recursive
 
 打开`vim`，如果没有提示`YouCompleteMe`未加载，就说明安装成功了
 
+在`.ycm_extra_conf.py`文件中删除以下代码（支持C++标准库）
+
+```
+    # NOTE: This is just for YouCompleteMe; it's highly likely that your project
+    # does NOT need to remove the stdlib flag. DO NOT USE THIS IN YOUR
+    # ycm_extra_conf IF YOU'RE NOT 100% SURE YOU NEED IT.
+    try:
+      final_flags.remove( '-stdlib=libc++' )
+    except ValueError:
+      pass
+```
+
+注：与YCM冲突的插件：
+
+* clang_complete
+* AutoComplPop
+* Supertab
+* neocomplcache
+* jedi
+
+可选(optional)插件：
+
+* `Plugin 'Valloric/ListToggle'`
+* `Plugin 'scrooloose/syntastic'`
+
 ### Vundle命令：
 ```
 :h Vundle
