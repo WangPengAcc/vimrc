@@ -40,11 +40,9 @@ alias macvim=mvim
 
 把`molokai.vim`放到`~/.vim/colors/`路径下
 
-### 下载字体：
+### 设置字体：
 
-状态栏美化要用，下载后保存到一个文件夹，我的是`~/font/vim-powerline/`，然后在系统设置里面设置一下就好
-
-[地址](https://github.com/iospp/FontForPowerline)
+状态栏美化要用，把`vim-powerline`保存到一个文件夹，我的是`~/font/vim-powerline/`，然后在系统设置里面设置一下就好
 
 ### 安装Vundle：
 
